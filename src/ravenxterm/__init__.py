@@ -1,7 +1,7 @@
 """RavenXTerm - A Local-First AI Terminal Extension
 
 This package provides an AI-powered terminal enhancement system that integrates
-with existing terminal emulators to provide intelligent assistance and automation.
+with existing terminal emulators to provide intelligent assistance.
 """
 
 __version__ = "0.1.1-alpha"
