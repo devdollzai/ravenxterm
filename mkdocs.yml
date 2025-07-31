@@ -1,0 +1,80 @@
+site_name: RavenXTerm Documentation
+site_description: Local-First AI Terminal Extension Documentation
+site_author: RavenXTerm Team
+repo_url: https://github.com/yourusername/ravenxterm
+repo_name: RavenXTerm
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Installation: getting-started/installation.md
+    - Quick Start: getting-started/quickstart.md
+    - Configuration: getting-started/configuration.md
+  - User Guide:
+    - Basic Usage: user-guide/basic-usage.md
+    - Advanced Features: user-guide/advanced-features.md
+    - Customization: user-guide/customization.md
+  - Technical Reference:
+    - Architecture: technical/architecture.md
+    - API Reference: technical/api-reference.md
+    - Model Integration: technical/model-integration.md
+  - Contributing:
+    - How to Contribute: contributing/how-to-contribute.md
+    - Development Setup: contributing/development-setup.md
+    - Code Style Guide: contributing/code-style-guide.md
+  - About:
+    - Release Notes: about/release-notes.md
+    - License: about/license.md
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.emoji
+
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          rendering:
+            show_source: true
+  - git-revision-date-localized
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/yourusername/ravenxterm
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/ravenxterm
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/ravenxterm
