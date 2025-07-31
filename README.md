@@ -9,6 +9,10 @@ A Local-First AI Terminal Extension with seamless integration into your terminal
 - ⚡ **Low Latency**: Direct integration with LLama2 for rapid responses
 - 🧠 **Context-Aware**: Understands your terminal environment and command history
 - 🛠️ **Extensible**: Plug-in architecture for custom command handlers and AI models
+- 🎯 **Adaptive Model Selection**: Intelligent model choice based on task requirements and system capabilities
+- 📊 **Performance Optimization**: Learns from usage patterns to improve model selection over time
+- 💻 **Hardware-Aware**: Automatically detects and utilizes available hardware capabilities (CPU, GPU, NPU)
+- ⚙️ **Customizable Preferences**: Fine-tune memory usage, performance modes, and hardware utilization
 
 ## Architecture
 
@@ -69,6 +73,40 @@ explain tar -czf archive.tar.gz /path/to/directory
 
 # Generate a command based on natural language
 generate "create a backup of my MySQL database"
+
+# Configure model preferences
+ravenxterm config set performance_mode speed
+ravenxterm config set accuracy high
+
+# View system status and model performance
+ravenxterm status
+ravenxterm models list
+```
+
+## Model Management
+
+RavenXTerm includes a sophisticated model management system that handles:
+
+- **Automatic Model Selection**: Chooses the best model based on task requirements and available resources
+- **Performance Tracking**: Monitors and learns from model performance to improve selection
+- **Resource Management**: Efficiently manages memory usage and hardware utilization
+- **Adaptive Learning**: Continuously improves model selection based on usage patterns
+
+### Configuration Options
+
+```yaml
+model:
+  performance_mode: speed  # speed, memory, or balanced
+  accuracy_preference: high  # high, medium, or low
+  max_memory_usage: 0.7  # Fraction of system memory to use
+  preferred_devices:
+    - cuda  # Use GPU if available
+    - cpu  # Fallback to CPU
+
+cache:
+  enabled: true
+  max_size_gb: 10
+  cleanup_threshold: 0.8  # Cleanup when 80% full
 ```
 
 ## Configuration

@@ -37,10 +37,10 @@ nav:
     - Basic Usage: user-guide/basic-usage.md
     - Advanced Features: user-guide/advanced-features.md
     - Customization: user-guide/customization.md
+  - API Reference:
+    - Model Management: api/model_management.md
   - Technical Reference:
     - Architecture: technical/architecture.md
-    - API Reference: technical/api-reference.md
-    - Model Integration: technical/model-integration.md
   - Contributing:
     - How to Contribute: contributing/how-to-contribute.md
     - Development Setup: contributing/development-setup.md
